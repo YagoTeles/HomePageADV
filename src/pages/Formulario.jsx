@@ -52,7 +52,7 @@ const FormWpp = () => {
         <Typography style={{width:'100%',display:'flex',justifyContent:"center"}}> Contato via Whatsapp:</Typography>
         <Typography style={{width:'100%',display:'flex',justifyContent:"center"}} variant='h5'> Nosso Whatsapp:<br/> (85) 9 0000-0000</Typography>
         <Root><Divider><Chip label="OU" /></Divider></Root>
-        <Button style={{width:'100%',display:'flex',justifyContent:"center"}} size='large' variant='text'><Typography variant='h5'>Apenas clique aqui</Typography> </Button>
+        <Button style={{width:'100%',display:'flex',justifyContent:"center"}} size='large' variant='text'><Typography variant='h5'>Clique aqui</Typography> </Button>
     </Grid>    
 </Paper>);
 }
