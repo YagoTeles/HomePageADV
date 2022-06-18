@@ -1,0 +1,138 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.paperHeader{
+    height: 90px;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom-style: ridge;
+    border-bottom-color:#bf8e3a;  
+}
+.logo1{
+    height: 90px;
+}
+
+.headerOrganizer{
+    width: 33.3%;
+}
+.headerOrganizer2{
+    width: 33.3%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    height: 75px;
+}
+.paperForm{
+    height: fit-content;
+    width: 500px;
+    padding: 10px;
+}
+
+//SliderPhotos------------
+$media-w: 6vw ;
+$media-h: 5.2vw ;
+.SliderPhotos-Primary{
+    height: 20vw;
+}
+.SliderPhotos-Secondary{
+    height: $media-h;
+    width: $media-w;
+    cursor: pointer;
+}
+.SliderPhotos-Text{
+    width: 150px;
+}
+.SliderPhotos-Div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc($media-h + 3px);
+    width: calc($media-w + 3px );
+}
+//media
+@media only screen and (max-width: 800px) {
+$media-w: 98% ;
+$media-h: 70px ; 
+    .paperForm{
+        height: fit-content;
+        width: 400px;
+        padding: 10px;
+    }
+
+    .logo1{
+        height: 80px;
+    }
+    .paperHeader{
+        height: 120px;
+        padding: 10px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    .headerOrganizer2{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 10px;
+        height: 75px;
+    }
+    .headerOrganizer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .SliderPhotos-Primary{
+        height: 49vw;
+    }
+    .SliderPhotos-Secondary{
+        height: $media-h;
+        width: $media-w;
+        border: 1px;
+        cursor: pointer;
+    }
+    .SliderPhotos-Text{
+        width: 150px;
+    }
+    .SliderPhotos-Div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: calc($media-h + 3px);
+        width: calc($media-w + 3px );
+    }
+}
+@media only screen and (max-width: 600px) {
+    $media-h: 40px ; 
+    $media-w: 98% ;
+
+    .paperForm{
+        height: fit-content;
+        width: 95%;
+        padding: 10px;
+    }
+
+    .SliderPhotos-Secondary{
+        height: $media-h;
+        width: $media-w;
+        border: 1px;
+        cursor: pointer;
+    }
+    .SliderPhotos-Div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        height: calc($media-h + 3px);
+        width: calc($media-w + 3px );
+    }
+
+}
