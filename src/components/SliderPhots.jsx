@@ -5,17 +5,17 @@ import Grid from '@mui/material/Grid';
 import Stack from '@mui/material/Stack';
 import '../styles.scss'
 
-const secondaryImages = ["https://picsum.photos/id/1041/800/450",
-                         "https://picsum.photos/id/1052/800/450",
-                         "https://picsum.photos/id/1043/800/450",
-                         "https://picsum.photos/id/1044/800/450",
-                         "https://picsum.photos/id/1045/800/450",
-                         "https://picsum.photos/id/1049/800/450",
-                         "https://picsum.photos/id/1047/800/450", 
+const secondaryImages = [require('../img/1.jpg'),
+                         require('../img/2.jpg'),
+                         require('../img/3.jpg'),
+                         require('../img/4.jpg'),
+                         require('../img/5.jpg'),
+                         require('../img/6.jpg'),
+                         require('../img/7.jpg'), 
                         ]
 
 function SwipeableTextMobileStepper() {
-  const [selectedImage, setSelectedImage] = useState("https://picsum.photos/id/1041/800/450");
+  const [selectedImage, setSelectedImage] = useState(require('../img/1.jpg'));
   return (
       <Grid
         container
