@@ -1,7 +1,6 @@
 import Box from '@mui/material/Box';
 import '../footer-style.scss'
 import Paper from '@mui/material/Paper';
-import { Typography } from '@mui/material';
 import Button from '@mui/material/Button';
 import WhatsappIcon from './WhatsappIcon';
 import InstaIcon from '../components/InstaIcon';

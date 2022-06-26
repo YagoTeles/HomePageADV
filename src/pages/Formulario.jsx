@@ -26,7 +26,7 @@ const Root = styled('div')(({ theme }) => ({
 let erro = false 
 const erroInInputs = () => erro = !erro
 const FormEmail = () => {
-    const { register, handleSubmit, watch, formState: { errors },control } = useForm();
+    const { register, handleSubmit,formState: { errors },control } = useForm();
     const onSubmit = data => console.log(data);
     console.log(errors);
     const [errorName,setErrorName] = useState(false);
@@ -40,7 +40,7 @@ const FormEmail = () => {
         if (errors.Email) setErrorEmail(true);
         if (errors.Telefonedecontato) setErrorTelefone(true);
         if (errors.Escrevasuamensagem) setErrorMensagem(true);
-        
+     // eslint-disable-next-line   
       }, [erro]);
 
     return(
