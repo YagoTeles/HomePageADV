@@ -10,13 +10,9 @@ import Typography from '@mui/material/Typography';
 //----------------------------------------------------
 import Home from '../pages/Home';
 import Formulario from '../pages/Formulario';
-import Footer from './Footer';
+import Footer from './Footer'
 //----------------------------------------------------
-/*
-<Typography >
-                            Whatsapp: (99) 99999-9999 <br/>
-                            Email: email.usuario.com.br
-                        </Typography>*/
+
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -29,7 +25,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ pt: 3 }}>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -58,6 +54,7 @@ function Header() {
 
     return ( 
         <Box>
+          
             <Box>
                 <Paper elevation={5} className= 'paperHeader' square>
                         <div className='headerOrganizer'>
@@ -66,7 +63,7 @@ function Header() {
                         <div className='headerOrganizer' >    
                     <Box>
                         <Tabs value={value} onChange={handleChange} centered>
-                          <Tab label="Home" {...a11yProps(0)} />
+                          <Tab label="Inicio" {...a11yProps(0)} />
                           <Tab label="Equipe" {...a11yProps(1)} />
                           <Tab label="Contato" {...a11yProps(2)} />
                         </Tabs>
@@ -78,20 +75,27 @@ function Header() {
                    
                 </Paper>
                 
-                
             </Box>
-
                 <TabPanel value={value} index={0}>
+                  <Box className='adjustFooterH'>
                     <Home/>
+                  </Box>    
                     <Footer/>
+                         
                 </TabPanel>
                 <TabPanel value={value} index={1}>
+                  <Box className='adjustFooterH'>
                     Aqui vai ficar as fotos e informações sobre a equipe
+                  </Box>   
                     <Footer/>
+                     
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                    <Formulario/>
+                  <Box className='adjustFooterH'>
+                      <Formulario/>
+                  </Box>    
                 </TabPanel>
+                
         </Box>
      );
 }
