@@ -42,49 +42,80 @@
     width: 100%;
 }
 .icons-footer{
+    width: fit-content;
     display: flex;
     justify-content: space-around;
-    width: 130px;
-    margin-right: 2vw;
-    margin-left: 13vw;
+    
 }
 .Typography{
     font-size: 20px;
-    display: flex;
     text-align: start;
-    
+    height:fit-content;
 }
 .NoHover:hover{
     background-color: inherit !important;
+}
+@media only screen and (max-width: 980px) {
+    .paperFooter{
+        height: 50vh;
+    }
+    .footer {
+        height: 250px;
+      }
+    .footerTypography{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .RedesSociaisDiv{
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ButtonAgendarAgora{
+        width: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+    }
+    .Typography{
+        margin-bottom: 5px;
+    }
+
 }
 @media only screen and (max-width: 600px) {
     .footer {
         position: sticky;
         left: 0;
         bottom: -7vh;
-        height: 28vh;
-        
+        height: 28vh 
       }
     .Typography{
         font-size: 16px;
         flex-direction: column;
-        height: 80px;
+        height: fit-content;
+        margin-bottom: 12px;
     }
     .icons-footer {
         margin-left: 0;
+        
+    }
+    .footerpart1 {
+        justify-content: center;
     }
 
     .footerTypography{
         display: flex;
         flex-direction: column;
-        
+        align-items: center;
+        justify-content: center;
     }
     .logoFooter{
         height: 65px;
         margin-right: 25px;
     }
     .paperFooter{
-        height:37vh; 
+        height:46vh; 
     }
     .PositionFixed{
         position: fixed;
@@ -98,9 +129,29 @@
         display: flex;
         flex-direction: column;
         width: fit-content;
+
     }
     .icons-footer{
         
         
     }
+}
+@media only screen and (max-height: 400px) {
+    .footer {
+        position: sticky;
+        left: 0;
+        bottom: -2vh;
+        height: 28vh; 
+    }
+    .paperFooter{
+        height:90vh;
+        
+    }
+    .footerTypography{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }

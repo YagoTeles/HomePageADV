@@ -6,6 +6,7 @@ import WhatsappIcon from './WhatsappIcon';
 import InstaIcon from '../components/InstaIcon';
 import MapsIcon from '../components/MapsIcon';
 import IconButton from '@mui/material/IconButton';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 function Footer() {
     return (
 
@@ -26,28 +27,41 @@ function Footer() {
             
                 <Paper elevation={5} className= 'paperFooter' square >
                     <div className='footerpart1'>
-                        <img src={require('../img/Logo2.png')} alt="Logo Montenegro e Teles" className='logoFooter' />
+                        
                         <Box className='footerTypography'>
                            
                                 <div className='Typography'>
+                                     <div style={{width:'100%',textAlign:'center',fontWeight:600}}>Endereço</div>
                                         Avenida Washington Soares, <br/>1400, sala 603, Juridical Center
                                 </div>
                                 <div className='Typography'>
-                                        E-mail: <br/>
+                                       <div style={{width:'100%',textAlign:'center',fontWeight:600}}>E-mail</div> 
                                         hermeniateles.adv@gmail.com
                                 </div>
-                                <div className='icons-footer'>
-                                    <IconButton className='NoHover'>
-                                        <InstaIcon/>
-                                    </IconButton>
+                                <div className='ButtonAgendarAgora'>
+                                    <Button 
+                                    startIcon={<CalendarMonthIcon />} 
+                                    variant={'contained'}
+                                    
+                                    href={'https://wa.me/5585988112138'}
+                                    target="_blank"
+                                    sx={{height:'fit-content', marginBottom:2,marginTop:1}}>agendar agora</Button>
+                                </div>
+                                <div className='RedesSociaisDiv'>
+                                    <div style={{width:'100%',textAlign:'center',fontWeight:600}}>Redes sociais</div>
+                                    <div className='icons-footer'>
+                                        <IconButton className='NoHover'>
+                                            <InstaIcon/>
+                                        </IconButton>
 
-                                    <IconButton className='NoHover'>
-                                        <MapsIcon/>
-                                    </IconButton>
+                                        <IconButton className='NoHover'>
+                                            <MapsIcon/>
+                                        </IconButton>
 
-                                    <IconButton className='NoHover' href={'https://wa.me/5585988112138'} target="_blank">
-                                        <WhatsappIcon tamanho = "30"/>
-                                    </IconButton>
+                                        <IconButton className='NoHover' href={'https://wa.me/5585988112138'} target="_blank">
+                                            <WhatsappIcon tamanho = "30"/>
+                                        </IconButton>
+                                    </div>
                                 </div>
                             
                         </Box>
